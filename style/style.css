@@ -1,17 +1,55 @@
-#container {
-	min-height: 100%;
-	position: relative;
+header, footer {
+  background:#00ff00;
 }
-header {
-	padding: 0.5vh;
+.header-links {
+  float:right;
+  clear:right;
 }
-body {
-	padding: 10px;
-	padding-bottom: 0.5vh;
+.post {
+    width: 50%;
+    margin: 0 auto; 
+    margin-bottom: 50px;
+}
+#logo {
+  width: 90px;
+  height: 30px;
 }
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
+  clear:both;
+}
+body {
+  background:grey;
+}
+.centered-content {
+  max-width:960px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.main {
+  min-height:1000px;
+  
+}
+article form label {
+  float:left;
+  width:120px;
+  clear:left;
+}
+.no-fixed-width {
+  width:auto;
+}
+article form input,
+article form textarea {
+  float:left;
+}
+.content article {
+  clear:both;
+}
+nav {
+  display:block;
+  width:20%;
+  float:left;
+}
+.content {
+  width:75%;
+  float:left;
 }
