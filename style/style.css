@@ -29,6 +29,12 @@ body {
   min-height:1000px;
   
 }
+#main {
+  flex-grow:1;
+  
+  display:flex;
+  background:yellow;
+}
 article form label {
   float:left;
   width:120px;
@@ -48,8 +54,25 @@ nav {
   display:block;
   width:20%;
   float:left;
+  flex-flow: column;
 }
 .content {
   width:75%;
   float:left;
+}
+#main {
+  flex-flow:column;
+}
+@media screen
+  and (min-width: 414px) {
+    
+}
+@media screen
+  and (min-width: 1024px) {
+    nav li {
+    float:none;
+    }
+  #main {
+    flex-flow:row;
+  }
 }
