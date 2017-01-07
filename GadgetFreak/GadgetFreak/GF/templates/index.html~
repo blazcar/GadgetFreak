@@ -16,7 +16,7 @@
 		           Prijavljen kot {{ user }}
 				<div class="header-links"><a href="{% url 'logout' %}">Logout</a></div>
 		        {% else %}
-				Brez prijave
+				Niste prijavljeni
 		        <div class="header-links"><a href="{% url 'login_user' %}">Prijava</a></div>
 				<div class="header-links"><a href="{% url 'register_user' %}">Registracija</a></div>
 		    {% endif %}

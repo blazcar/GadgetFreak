@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang='si'>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Gadget Freak - Prijava</title>
+  </head>
+
+  <body>
+  <article>
+	<p>Niste prijavljeni</p>
+    <form method='POST' action='#'>
+		{% csrf_token %}
+		{{ LoginForm }} 
+		 <input type="submit" value="Login" />
+	</form>
+  </article>
+
+  </body>
+</html>
+

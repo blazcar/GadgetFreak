@@ -7,7 +7,7 @@ from datetime import datetime
 
 # Create your models here.
 
-
+"""
 class Article(models.Model):
   title = models.CharField(max_length=100, default='Brez naslova')
   content = models.TextField()
@@ -25,4 +25,4 @@ class Comment(models.Model):
 class Specs(models.Model):
   vsebina = models.TextField()
   article = models.ForeignKey( Article, on_delete=models.CASCADE )
-
+"""
