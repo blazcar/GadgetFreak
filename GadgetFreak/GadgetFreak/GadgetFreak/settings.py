@@ -37,12 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'GF',
+	  'GF',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+		'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -106,6 +107,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = [
+  ('en-us', 'English'),
+  ('sl-SI', 'Slovenian'),
+]
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -120,3 +126,45 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+LOCALE_PATHS = ['locale/']
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'detail': {
+            'format': '[%(levelname)s] in %(filename)s at %(asctime)s %(module)s >> %(message)s <<'
+        },
+        'simple': {
+            'format': '[%(levelname)s] in %(filename)s  >> %(message)s <<'
+        },
+    },
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'handlers': {
+        'log_file':{
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': 'logs/log_file.log',
+            'maxBytes': '16777216', # 16megabytes
+            'formatter': 'detail'
+        },
+    },
+    'loggers': {
+        'apps': { 
+            'handlers': ['log_file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
+
+
+
+
+

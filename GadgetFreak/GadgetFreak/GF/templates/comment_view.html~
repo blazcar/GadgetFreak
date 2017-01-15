@@ -1,0 +1,19 @@
+{% load i18n %}
+<!doctype html>
+<html lang='si'>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Comment View</title>
+  </head>
+
+  <body>
+  <article>
+	<h3><a href="{% url 'comment_edit' comment.id %}">Edit comment</a> <a href="{% url 'comment_delete' comment.id %}">Delete comment</a></h3>
+	<p>{{ comment.comment }}</p>
+	<p>Posted {{ comment.author.username }}, at {{ comment.pub_date }}</p>
+  </article>
+
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+{% load i18n %}
+{% load static %}
+<!doctype html>
+<html lang='si'>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Article View</title>
+  </head>
+
+  <body>
+  <article>
+	<h1>{{ article.title }} <a href="{% url 'article_edit' article.id %}">Edit</a> <a href="{% url 'article_delete' article.id %}">Delete</a></h1>
+	<p><h3>Content:</h3></p>		
+	<div>{{ article.content }}</div>
+	<p>Author {{ article.author.username }}, at {{ article.pub_date }}</p>
+  </article>
+
+  </body>
+</html>
+

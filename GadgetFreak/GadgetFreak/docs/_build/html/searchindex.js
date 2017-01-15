@@ -1,0 +1,1 @@
+Search.setIndex({envversion:49,filenames:["index","modules/models","modules/views"],objects:{},objnames:{},objtypes:{},terms:{content:0,index:0,model:0,modul:0,page:0,search:0,thi:0,view:0},titles:["Welcome to GadgetFreak&#8217;s documentation!","Models","Views"],titleterms:{document:0,gadgetfreak:0,indice:0,model:1,tabl:0,view:2,welcom:0}})

@@ -1,0 +1,52 @@
+[INFO] in views.py at 2017-01-15 09:56:18,715 views >> blazchar wrote comment under article Sončna nedelja <<
+[INFO] in views.py at 2017-01-15 09:56:57,111 views >> blazchar wrote comment under article Sončna nedelja <<
+[INFO] in views.py at 2017-01-15 10:27:26,278 views >> Article Sončna nedelja was successfully deleted <<
+[INFO] in views.py at 2017-01-15 10:27:35,483 views >> { blazchar } wrote article Nedelja1 <<
+[INFO] in views.py at 2017-01-15 10:27:43,030 views >> User with username {  } logged out <<
+[INFO] in views.py at 2017-01-15 10:27:55,444 views >> { tester } successfully logged in <<
+[INFO] in views.py at 2017-01-15 10:28:03,370 views >> { tester } wrote comment under article Nedelja1 <<
+[INFO] in views.py at 2017-01-15 10:28:05,746 views >> User with username {  } logged out <<
+[INFO] in views.py at 2017-01-15 10:29:02,878 views >> { bedak } successfully logged in <<
+[ERROR] in views.py at 2017-01-15 10:29:08,360 views >> User { bedak } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:29:11,233 views >> User { bedak } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:29:12,048 views >> User { bedak } is not permitted to delete article Nedelja1 <<
+[WARNING] in views.py at 2017-01-15 10:29:12,835 views >> { bedak } is not permitted to edit article Nedelja1 <<
+[INFO] in views.py at 2017-01-15 10:32:39,791 views >> User with username {  } logged out <<
+[ERROR] in views.py at 2017-01-15 10:35:41,539 views >> User with username { luka } already exists <<
+[WARNING] in views.py at 2017-01-15 10:35:41,540 views >> Register form was not valid <<
+[ERROR] in views.py at 2017-01-15 10:36:20,973 views >> User with username { fotr } already exists <<
+[WARNING] in views.py at 2017-01-15 10:36:20,973 views >> Register form was not valid <<
+[INFO] in views.py at 2017-01-15 10:37:36,719 views >> User with username { fotr } was successfully registered <<
+[WARNING] in views.py at 2017-01-15 10:37:36,719 views >> Register form was not valid <<
+[INFO] in views.py at 2017-01-15 10:38:04,705 views >> { fotr } successfully logged in <<
+[WARNING] in views.py at 2017-01-15 10:38:42,700 views >> { fotr } is not permitted to edit article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:44,671 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:45,627 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:45,822 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:46,119 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:46,266 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:46,408 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:46,571 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:46,724 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:46,874 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:47,037 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:47,202 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:47,358 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:47,517 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:47,691 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:47,841 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:48,295 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:48,462 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:48,607 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 10:38:55,929 views >> User { fotr } is not permitted to delete this comment <<
+[ERROR] in views.py at 2017-01-15 10:38:56,676 views >> User { fotr } is not permitted to delete this comment <<
+[ERROR] in views.py at 2017-01-15 10:38:57,080 views >> User { fotr } is not permitted to delete this comment <<
+[WARNING] in views.py at 2017-01-15 10:38:57,512 views >> { fotr } is not permitted to edit this comment <<
+[INFO] in views.py at 2017-01-15 10:39:03,036 views >> { fotr } wrote comment under article Nedelja1 <<
+[ERROR] in views.py at 2017-01-15 12:50:11,743 views >> User { fotr } is not permitted to delete article Nedelja1 <<
+[WARNING] in views.py at 2017-01-15 12:50:12,705 views >> { fotr } is not permitted to edit article Nedelja1 <<
+[INFO] in views.py at 2017-01-15 17:26:24,526 views >> User with username {  } logged out <<
+[ERROR] in views.py at 2017-01-15 17:26:27,952 views >> User {  } is not permitted to delete article Nedelja1 <<
+[WARNING] in views.py at 2017-01-15 17:26:29,225 views >> {  } is not permitted to edit article Nedelja1 <<
+[INFO] in views.py at 2017-01-15 17:26:52,186 views >> { blazchar } successfully logged in <<
+[INFO] in views.py at 2017-01-15 17:26:56,442 views >> Article Nedelja1 was successfully deleted <<

@@ -16,8 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from GF import views
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
-	url(r'^GadgetFreak/', include('GF.urls')),    
+	url(r'^GadgetFreak/', include('GF.urls')),
 ]
+
+urlpatterns += i18n_patterns(
+    url(r'^', include('GF.urls')),
+)

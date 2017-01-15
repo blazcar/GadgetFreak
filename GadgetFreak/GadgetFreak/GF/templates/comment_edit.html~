@@ -1,0 +1,23 @@
+{% load i18n %}
+<!doctype html>
+<html lang='si'>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Edit Comment</title>
+  </head>
+
+  <body>
+
+	<article>
+		<form method="POST" action="#">
+			{% csrf_token %}
+			{{ edit_comment_form }}
+			<input type="submit" value="Ok" />
+		</form>
+	</article>
+
+
+  </body>
+</html>
+

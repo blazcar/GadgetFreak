@@ -1,0 +1,21 @@
+{% load i18n %}
+{% load static %}
+<!doctype html>
+<html lang='si'>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Edit Article</title>
+  </head>
+
+  <body>
+		<form method="POST" action="#">
+			{% csrf_token %}
+			{{ edit_article_form }}
+			<input type="submit" value="Ok" />
+		</form>
+
+
+  </body>
+</html>
+

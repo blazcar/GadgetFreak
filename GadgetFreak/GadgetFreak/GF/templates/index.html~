@@ -1,3 +1,5 @@
+{% load static %}
+{% load i18n %}
 <!doctype html>
 <html lang='si'>
 
@@ -13,24 +15,55 @@
         <div class="header-content centered-content">
           <span>Gadget Freak</span>
 			{% if user.is_authenticated %}
-		           Prijavljen kot {{ user }}
-				<div class="header-links"><a href="{% url 'logout' %}">Logout</a></div>
+		           {% blocktrans %}Logged as {{ user }}{% endblocktrans %}
+				<div class="header-links"><a href="{% url 'logout' %}">{% blocktrans %}Logout{% endblocktrans %}</a></div>
 		        {% else %}
-				Niste prijavljeni
-		        <div class="header-links"><a href="{% url 'login_user' %}">Prijava</a></div>
-				<div class="header-links"><a href="{% url 'register_user' %}">Registracija</a></div>
+				{% blocktrans %}Not logged{% endblocktrans %}
+		        <div class="header-links"><a href="{% url 'login_user' %}">{% blocktrans %}Login{% endblocktrans %}</a></div>
+				<div class="header-links"><a href="{% url 'register_user' %}">{% blocktrans %}Register{% endblocktrans %}</a></div>
 		    {% endif %}
 		  
           
         </div>
+			{% get_available_languages as languages %}
+        
+      {% for lang_code, lang_name in languages %}
+        {% language lang_code %}
+          <a href="{% url 'index' %}">{{ lang_name }}</a>
+        {% endlanguage %}
+      {% endfor %}
     </header>
-	{% block content %} 
-	{% endblock %}
+<div class = "centered-content">
+		<form method='POST' action="{% url 'write_article' %}">
+      {% csrf_token %}
+			{{ NewArticleForm }} 
+			<input type="submit" value="{% blocktrans %}Add new article{% endblocktrans %}" />
+		</form>
+		
+		{% for article in articles %}
+				<div>					
+					<div><h3>{% blocktrans %}Title{% endblocktrans %}:</h3><a href="{% url 'article_view' article.id %}">{{ article.title }}</a></div>
+					<div>{{article.content}}</div>
+					<p>{% blocktrans %}Author{% endblocktrans %}:</p><p>{{article.author}}</p>
+				</div>
+<p>{% blocktrans %}Comments{% endblocktrans %}:</p>
+				{% for comment in comments %}
+					{% ifequal comment.article_id article %}
+						<ul>{{comment.comment}} <a href ="{% url 'comment_view' comment.id %}">->{% blocktrans %}Edit comment{% endblocktrans %}</a></ul>
+					{% endifequal %}
+				{% endfor %}
+				<form method = 'POST' action="{% url 'write_comment' article.id %}">
+					{% csrf_token %}
+					{{ NewCommentForm }}				
+				<input type ="submit" value="{% blocktrans %}Comment{% endblocktrans %}" />
+				</form>
+		{% endfor %}
+		</div>
     
     <footer>
       <div class="centered-content">
-        <a href="/legal.html">Pravna obvestila</a> |
-        <a href="/authors.html">Avtor strani</a>
+        <a href="/legal.html">{% blocktrans %}Legal{% endblocktrans %}</a> |
+        <a href="/authors.html">{% blocktrans %}Page authors{% endblocktrans %}</a>
       </div>
     </footer>
 
