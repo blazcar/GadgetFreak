@@ -1,0 +1,7 @@
+Za pravilno delovanje aplikacije je potrebno imeti nameščen python.
+Aplikacija deluje v python VirtualEnv okolju, zato so tu nameščeni že vsi potrebni moduli, ki jih potrebujemo za zagon.
+Pred zagonom je potrebno biti v mapi GadgetFreak, kjer se nahaja manage.py datoteka. Sledijo ukazi:
+1. python ./manage.py makemigrations
+2. python ./manage.py migrate
+3. python ./manage.py runserver
+Nato aplikacija deluje v brskalniku na naslovu, izpisanem v terminalu.
